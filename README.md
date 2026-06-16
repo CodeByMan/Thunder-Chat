@@ -416,7 +416,6 @@ The backend is organized into route modules:
 9. Create a group channel
 10. Send a channel message and test live updates
 
-```
 ---
 
 ## 🧑‍💻 Author
