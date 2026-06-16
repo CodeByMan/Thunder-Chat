@@ -1,13 +1,15 @@
 <div align="center">
 
-# 🐾 PetBuddy — Pet Care & Clinic
+# ⚡ ThunderChat — Real-Time Messaging App
 
-A modern full-stack pet care, clinic, adoption, and pet shop platform built with the **MERN stack**. PetBuddy connects pet owners, veterinarians, shelters, and administrators through role-based dashboards, appointment management, pet health records, adoption workflows, product shopping, reviews, and AI-powered pet-care guidance.
+A modern full-stack real-time chat application built with the **MERN stack**, **Next.js**, and **Socket.io**. ThunderChat provides secure authentication, profile setup, direct messaging, group channels, media/file sharing, live Socket.io communication, and a responsive dark chat interface.
 
 ![MERN](https://img.shields.io/badge/Stack-MERN-16a34a?style=for-the-badge)
-![React](https://img.shields.io/badge/Frontend-React%20%2B%20Vite-61dafb?style=for-the-badge)
+![Next.js](https://img.shields.io/badge/Frontend-Next.js%20%2B%20React-000000?style=for-the-badge)
 ![Node.js](https://img.shields.io/badge/Backend-Node.js%20%2B%20Express-111827?style=for-the-badge)
 ![MongoDB](https://img.shields.io/badge/Database-MongoDB-10b981?style=for-the-badge)
+![Socket.io](https://img.shields.io/badge/Realtime-Socket.io-6366f1?style=for-the-badge)
+![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS-38bdf8?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-f97316?style=for-the-badge)
 
 </div>
@@ -16,48 +18,48 @@ A modern full-stack pet care, clinic, adoption, and pet shop platform built with
 
 ## 📌 Project Overview
 
-**PetBuddy** is a full-stack MERN pet-care and clinic management system designed for pet owners, veterinarians, shelters, and admins. The platform provides a centralized digital experience for managing pets, medical records, vet appointments, treatment logs, adoption requests, pet-care content, products, cart operations, reviews, notifications, and AI-based pet-care feedback.
+**ThunderChat** is a full-stack real-time messaging platform designed for fast and secure communication. The application includes user authentication, profile customization, direct one-to-one messaging, group channel conversations, file upload support, contact search, and live message delivery using Socket.io.
 
 ---
 
 ## ✨ Premium Features
 
-- 🔐 **JWT authentication** with protected frontend routes and cookie support
-- 👥 **Role-based dashboards** for owner, vet, shelter, and admin users
-- 🐶 **Pet profile management** with owner-based pet records
-- 🩺 **Health record management** with image gallery upload support
-- 📄 **PDF health record download** using PDFKit
-- 📅 **Appointment booking and management** for pet owners and veterinarians
-- 🧾 **Treatment log system** for pet medical follow-ups
-- 🏥 **Veterinarian profile and appointment modules**
-- 🏡 **Shelter adoption module** with adoptable pet listings
-- 📨 **Adoption request workflow** for adopters and shelters
-- 🛒 **Pet product shop** with product listings, product details, cart, and reviews
-- ⭐ **Review and rating system** for products
-- 🔔 **Notification module** with read/delete support
-- 🤖 **AI pet-care feedback assistant** powered by Google Gemini API
-- 🖼️ **Image upload support** using Multer and ImageKit
-- 📧 **Email notification support** using Nodemailer
-- 📱 **Responsive React/Vite frontend** with modern pet-care UI
-- 🌙 **Dark-mode compatible homepage UI improvements**
-- ✅ **Clean frontend lint status** after update
+- 🔐 **JWT authentication** using secure HTTP-only cookie support
+- 👤 **User signup and login** with validation and protected access
+- 🧾 **Persistent user session** using `/api/auth/user-info`
+- 🧑‍🎨 **Profile setup** with first name, last name, color selection, and profile image upload
+- 💬 **Direct one-to-one messaging** between registered users
+- 👥 **Group channel creation** and channel-based messaging
+- ⚡ **Real-time communication** using Socket.io
+- 📁 **File upload and sharing** in chat messages
+- 🖼️ **Profile image upload/remove support** using Multer
+- 🔎 **Search contacts** by email/name
+- 📇 **DM contact list** with conversation history support
+- 🧠 **Zustand state management** for lightweight frontend state
+- 🎨 **Modern dark chat UI** with responsive layout
+- 🔔 **Toast notifications** using Sonner
+- 😀 **Emoji picker support** for richer conversations
+- 🧩 **Radix UI components** for polished UI behavior
+- 🌀 **Lottie animations** for auth and empty-chat screens
+- 🚀 **Next.js App Router frontend** with same backend connectivity
+- 🌐 **Next.js rewrites/proxy** for REST API and upload routes
+- ✅ **Portfolio-ready MERN + Next.js architecture**
 
 ---
 
 ## 🖼️ Screenshots
 
-
-| Home |
-|------|
-| ![Home](docs/screenshots/homepage.png) |
-
-| Login | Dashboard |
+| Login | Register |
 |--------------|--------------|
-| ![Login](docs/screenshots/login.png) | ![Pet Profiles](docs/screenshots/dashboard.png) |
+| ![Login](docs/screenshots/login.png) | ![Register](docs/screenshots/register.png) |
 
-| Blog Page | AI Pet Chat Assistant |
+| Homepage | Profile Setup |
+|--------------|--------------|
+| ![Chat Dashboard](docs/screenshots/landing.png) | ![Profile Setup](docs/screenshots/profile.png) |
+
+| Chat Page | Group Channels |
 |-----------------|------------------|
-| ![AI Pet Assistant](docs/screenshots/blog.png) | ![AI Pet Assistant](docs/screenshots/chatai.png) |
+| ![Chat Page](docs/screenshots/chat.png) | ![Group Channels](docs/screenshots/channel.png) |
 
 ---
 
@@ -65,23 +67,21 @@ A modern full-stack pet care, clinic, adoption, and pet shop platform built with
 
 ### Frontend
 
-- React 18
-- Vite 5
-- React Router DOM
-- React Context API
+- Next.js 16
+- React 19
+- Next.js App Router
+- Tailwind CSS 4
+- Zustand
 - Axios
-- Bootstrap 5
-- Custom CSS template styling
-- AOS animations
-- WOW.js animations
-- Swiper
-- React Slick
-- React Responsive Carousel
-- React Toastify
-- React Icons
-- React Select
-- QRCode React
-- Yet Another React Lightbox
+- Socket.io Client
+- Radix UI
+- Lucide React Icons
+- Emoji Picker React
+- Sonner Toasts
+- Moment.js
+- Lottie animations with `@lottiefiles/dotlottie-react`
+- Styled Components
+- Custom reusable UI components
 
 ### Backend
 
@@ -89,75 +89,95 @@ A modern full-stack pet care, clinic, adoption, and pet shop platform built with
 - Express.js 5
 - MongoDB
 - Mongoose
+- Socket.io
 - JSON Web Token authentication
+- HTTP-only cookies
 - Cookie Parser
-- bcrypt
+- bcrypt password hashing
 - Multer uploads
-- ImageKit media hosting
-- Nodemailer email service
-- Google Gemini API integration
-- PDFKit PDF generation
 - dotenv environment configuration
 - CORS
 
 ---
 
-## 👤 User Roles
+## 👤 User Flow
 
-| Role | Description |
+| Flow | Description |
 | --- | --- |
-| **Pet Owner** | Manages pets, health records, appointments, cart, adoption requests, and AI pet-care help |
-| **Veterinarian** | Manages vet profile, appointments, pet medical history, and treatment logs |
-| **Shelter** | Manages adoptable pets, pet-care content/status, and adoption requests |
-| **Admin** | Manages users, products, pets, vets, and platform-level dashboard data |
+| **Signup** | New users can create an account with email and password validation |
+| **Login** | Existing users can securely log in using JWT cookie-based authentication |
+| **Profile Setup** | Users complete their profile with name, theme color, and profile image |
+| **Direct Chat** | Users can search contacts and start one-to-one conversations |
+| **Channel Chat** | Users can create group channels and send real-time channel messages |
+| **File Sharing** | Users can upload and share files inside conversations |
+| **Logout** | Users can safely clear their session and return to auth screen |
 
 ---
 
 ## 📁 Folder Structure
 
 ```bash
-PetBuddy-Clinic/
+Thunder-Chat/
 ├── backend/
 │   ├── index.js
 │   ├── package.json
-│   ├── src/
-│   │   ├── config/
-│   │   ├── controllers/
-│   │   ├── Middlwares/
-│   │   ├── models/
-│   │   ├── routes/
-│   │   └── Utils/
+│   ├── nodemon.json
+│   ├── socket.js
+│   ├── controllers/
+│   │   ├── authController.js
+│   │   ├── channelController.js
+│   │   ├── contactsController.js
+│   │   └── messagesController.js
+│   ├── middlewares/
+│   │   └── authMiddleware.js
+│   ├── models/
+│   │   ├── channelModel.js
+│   │   ├── messageModel.js
+│   │   └── userModel.js
+│   ├── routes/
+│   │   ├── authRoute.js
+│   │   ├── channelRoute.js
+│   │   ├── contactsRoute.js
+│   │   └── messagesRoute.js
+│   ├── uploads/
+│   │   ├── profiles/
+│   │   └── files/
 │   └── .env.example
 │
 ├── frontend/
-│   ├── index.html
-│   ├── package.json
-│   ├── vite.config.js
-│   ├── vercel.json
+│   ├── app/
+│   │   ├── auth/
+│   │   │   └── page.jsx
+│   │   ├── chat/
+│   │   │   └── page.jsx
+│   │   ├── profile/
+│   │   │   └── page.jsx
+│   │   ├── icon.jpg
+│   │   ├── layout.jsx
+│   │   └── page.jsx
+│   ├── public/
+│   │   └── assets/
+│   │       ├── authChatbot.lottie
+│   │       ├── channel.lottie
+│   │       ├── flash.lottie
+│   │       ├── noChat.lottie
+│   │       └── victory.svg
 │   ├── src/
-│   │   ├── assets/
 │   │   ├── components/
-│   │   ├── Context/
-│   │   ├── layouts/
+│   │   ├── context/
+│   │   │   └── socketContext.jsx
 │   │   ├── lib/
 │   │   ├── pages/
-│   │   │   ├── adminPages/
-│   │   │   ├── adoptablepages/
-│   │   │   ├── appointments/
-│   │   │   ├── cart/
-│   │   │   ├── health-records/
-│   │   │   ├── login/
-│   │   │   ├── pet-care/
-│   │   │   ├── pet-medical-history/
-│   │   │   ├── pet-profiles/
-│   │   │   ├── petchatbot/
-│   │   │   ├── product/
-│   │   │   ├── profile/
-│   │   │   └── signup/
-│   │   ├── services/
+│   │   │   ├── auth/
+│   │   │   ├── chat/
+│   │   │   └── profile/
+│   │   ├── store/
 │   │   ├── utils/
-│   │   ├── App.jsx
-│   │   └── main.jsx
+│   │   │   └── constant.js
+│   │   └── index.css
+│   ├── jsconfig.json
+│   ├── next.config.mjs
+│   ├── package.json
 │   └── .env.example
 │
 ├── docs/
@@ -184,46 +204,40 @@ Then update these values:
 
 | Variable | Description |
 | --- | --- |
-| `PORT` | Backend server port, usually `8000` |
-| `FRONTEND_URL` | Frontend URL, usually `http://localhost:5173` |
-| `MONGO_DB_STRING` | MongoDB connection string |
-| `JWT_SECRET` | Secret key for signing JWT tokens |
-| `NODE_ENV` | App environment, for example `development` |
-| `IMAGEKIT_PUBLIC_KEY` | ImageKit public key |
-| `IMAGEKIT_PRIVATE_KEY` | ImageKit private key |
-| `GEMINI_API_KEY` | Google Gemini API key for AI feedback |
-| `EMAIL_USER` | Email address used by Nodemailer |
-| `EMAIL_PASS` | Email app password or SMTP password |
+| `PORT` | Backend server port, usually `3000` |
+| `MONGODB_URL` | MongoDB Atlas or local MongoDB connection string |
+| `JWT_KEY` | Secret key for signing JWT tokens |
+| `ORIGIN` | Frontend URL, usually `http://localhost:5173` |
 
 Example:
 
 ```env
-PORT=8000
-FRONTEND_URL=http://localhost:5173
-MONGO_DB_STRING=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/PetBuddy
-JWT_SECRET=your_super_secret_jwt_key
-NODE_ENV=development
-IMAGEKIT_PUBLIC_KEY=your_imagekit_public_key
-IMAGEKIT_PRIVATE_KEY=your_imagekit_private_key
-GEMINI_API_KEY=your_gemini_api_key
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_email_app_password
+PORT=3000
+MONGODB_URL=mongodb+srv://your_username:your_password@your_cluster.mongodb.net/ThunderChat?retryWrites=true&w=majority
+JWT_KEY=your_super_secret_jwt_key
+ORIGIN=http://localhost:5173
 ```
 
-### Frontend `.env`
+### Frontend `.env.local`
 
-Create a `.env` file inside the `frontend` folder:
+Create a `.env.local` file inside the `frontend` folder:
 
 ```bash
 cd frontend
-cp .env.example .env
+cp .env.example .env.local
 ```
 
 Then update:
 
 ```env
-VITE_API_BASE_URL=http://localhost:8000
+NEXT_PUBLIC_SERVER_URL=http://localhost:3000
+NEXT_PUBLIC_SOCKET_URL=http://localhost:3000
 ```
+
+| Variable | Description |
+| --- | --- |
+| `NEXT_PUBLIC_SERVER_URL` | Backend URL used by Next.js rewrites/proxy |
+| `NEXT_PUBLIC_SOCKET_URL` | Socket.io backend URL used by browser client |
 
 ---
 
@@ -232,8 +246,8 @@ VITE_API_BASE_URL=http://localhost:8000
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/petbuddy-clinic.git
-cd petbuddy-clinic
+git clone https://github.com/your-username/thunderchat-nextjs-mern-realtime-chat.git
+cd thunderchat-nextjs-mern-realtime-chat
 ```
 
 ### 2. Install backend dependencies
@@ -249,27 +263,35 @@ npm install
 cp .env.example .env
 ```
 
-Update `.env` with your MongoDB URI, JWT secret, ImageKit keys, Gemini API key, frontend URL, and email credentials.
+Update `.env` with your MongoDB URI, JWT key, backend port, and frontend origin.
 
-### 4. Start the backend server
+### 4. Create upload folders
 
 ```bash
-npx nodemon index.js
+mkdir -p uploads/profiles uploads/files
 ```
 
-Or run with Node:
+For Windows CMD:
+
+```cmd
+mkdir uploads
+mkdir uploads\profiles
+mkdir uploads\files
+```
+
+### 5. Start the backend server
 
 ```bash
-node index.js
+npm run dev
 ```
 
 Backend runs by default at:
 
 ```bash
-http://localhost:8000
+http://localhost:3000
 ```
 
-### 5. Install frontend dependencies
+### 6. Install frontend dependencies
 
 Open a new terminal:
 
@@ -278,19 +300,20 @@ cd frontend
 npm install
 ```
 
-### 6. Configure frontend environment
+### 7. Configure frontend environment
 
 ```bash
-cp .env.example .env
+cp .env.example .env.local
 ```
 
 Update:
 
 ```env
-VITE_API_BASE_URL=http://localhost:8000
+NEXT_PUBLIC_SERVER_URL=http://localhost:3000
+NEXT_PUBLIC_SOCKET_URL=http://localhost:3000
 ```
 
-### 7. Start the frontend development server
+### 8. Start the Next.js frontend
 
 ```bash
 npm run dev
@@ -310,16 +333,17 @@ http://localhost:5173
 
 | Command | Description |
 | --- | --- |
-| `npx nodemon index.js` | Start backend in development mode |
-| `node index.js` | Start backend with Node.js |
+| `npm run dev` | Start backend in development mode with Nodemon |
+| `npm start` | Start backend with Node.js |
+| `npm test` | Placeholder test command |
 
 ### Frontend
 
 | Command | Description |
 | --- | --- |
-| `npm run dev` | Start Vite development server |
+| `npm run dev` | Start Next.js development server on port `5173` |
 | `npm run build` | Create production build |
-| `npm run preview` | Preview production build locally |
+| `npm start` | Start production Next.js server on port `5173` |
 | `npm run lint` | Run ESLint |
 
 ---
@@ -328,37 +352,85 @@ http://localhost:5173
 
 The backend is organized into route modules:
 
-| Module | Base Route |
-| --- | --- |
-| Authentication | `/auth` |
-| Users | `/user` |
-| Pets | `/pets` |
-| Health Records | `/health` |
-| Products | `/product` |
-| Cart | `/cart` |
-| Reviews & Ratings | `/reviews-rating` |
-| Veterinarians | `/vet` |
-| Appointments | `/appointment` |
-| Treatment Logs | `/treatment` |
-| Adoptable Pets | `/adoptable` |
-| Adoption Requests | `/adoption-request` |
-| Care Content | `/care-content` |
-| Notifications | `/notifications` |
-| AI Feedback | `/ai` |
+| Module | Base Route | Description |
+| --- | --- | --- |
+| Authentication | `/api/auth` | Signup, login, logout, profile setup, user info, profile image |
+| Contacts | `/api/contacts` | Search contacts and fetch DM contact lists |
+| Messages | `/api/messages` | Fetch direct messages and upload chat files |
+| Channels | `/api/channel` | Create channels, fetch user channels, and load channel messages |
+| Uploads | `/uploads/profiles`, `/uploads/files` | Static profile images and uploaded chat files |
+| Socket.io | `/socket.io` | Real-time direct and channel messaging |
 
 ---
 
+## 🔐 Authentication Routes
+
+| Method | Route | Description |
+| --- | --- | --- |
+| `POST` | `/api/auth/signup` | Register a new user |
+| `POST` | `/api/auth/login` | Login user and set JWT cookie |
+| `GET` | `/api/auth/user-info` | Get logged-in user details |
+| `POST` | `/api/auth/update-profile` | Update user profile |
+| `POST` | `/api/auth/add-profile-image` | Upload profile image |
+| `DELETE` | `/api/auth/remove-profile-image` | Remove profile image |
+| `POST` | `/api/auth/logout` | Logout user and clear cookie |
+
+---
+
+## 💬 Chat & Channel Routes
+
+| Method | Route | Description |
+| --- | --- | --- |
+| `POST` | `/api/contacts/search` | Search registered contacts |
+| `GET` | `/api/contacts/get-contacts-for-dm` | Get direct message contact list |
+| `GET` | `/api/contacts/get-all-contacts` | Get all contacts for channel creation |
+| `POST` | `/api/messages/get-messages` | Get one-to-one chat messages |
+| `POST` | `/api/messages/upload-file` | Upload and send a file |
+| `POST` | `/api/channel/create-channel` | Create a group channel |
+| `GET` | `/api/channel/get-user-channels` | Get channels of logged-in user |
+| `GET` | `/api/channel/get-channel-messages/:channelId` | Get messages for a specific channel |
+
+---
+
+## ⚡ Socket.io Events
+
+| Event | Description |
+| --- | --- |
+| `sendMessage` | Sends a direct message to another user |
+| `recieveMessage` | Receives a direct message in real time |
+| `send-channel-message` | Sends a message to a channel |
+| `recieve-channel-message` | Receives a channel message in real time |
+
+---
+
+## 🧪 Quick Test Flow
+
+1. Start backend on `http://localhost:3000`
+2. Start frontend on `http://localhost:5173`
+3. Create two user accounts
+4. Complete profile setup for both users
+5. Search the second user from the first account
+6. Send a direct message
+7. Open the second account in another browser/incognito window
+8. Confirm real-time message delivery
+9. Create a group channel
+10. Send a channel message and test live updates
+
+```
+---
 
 ## 🧑‍💻 Author
 
 **Muhammad Ali Nawaz**  
-MERN Full-Stack Developer  
+MERN Stack Developer
+
+GitHub: [@muhmdan](https://github.com/muhmdan)
 
 ---
 
 ## 📄 License
 
-This project is licensed under the [MIT license](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
