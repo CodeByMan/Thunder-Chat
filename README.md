@@ -423,8 +423,6 @@ The backend is organized into route modules:
 **Muhammad Ali Nawaz**  
 MERN Stack Developer
 
-GitHub: [@muhmdan](https://github.com/muhmdan)
-
 ---
 
 ## 📄 License
